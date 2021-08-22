@@ -1,0 +1,58 @@
+.open resanal1
+
+CREATE TABLE student
+(
+rno varchar(12),
+sname varchar(40),
+addr1 varchar(255),
+addr2 varchar(255),
+aadharid varchar(12),
+mobileid varchar(12)
+);
+
+CREATE TABLE clsdet
+(
+year varchar(2),
+semester varchar(2),
+acayear varchar(9),
+sub1 varchar(40), stitle1 varchar(9),facid1 varchar(3),
+sub2 varchar(40), stitle2 varchar(9),facid2 varchar(3),
+sub3 varchar(40), stitle3 varchar(9),facid3 varchar(3),
+sub4 varchar(40), stitle4 varchar(9),facid4 varchar(3),
+sub5 varchar(40), stitle5 varchar(9),facid5 varchar(3),
+sub6 varchar(40), stitle6 varchar(9),facid6 varchar(3),
+sub7 varchar(40), stitle7 varchar(9),facid7 varchar(3),
+sub8 varchar(40), stitle8 varchar(9),facid8 varchar(3),
+sub9 varchar(40), stitle9 varchar(9),facid9 varchar(3),
+sub10 varchar(40), stitle10 varchar(9),facid10 varchar(3),
+sub11 varchar(40), stitle11 varchar(9),facid11 varchar(3)
+);
+
+CREATE TABLE faculty
+(
+fid varchar(3),
+fname varchar(40)
+);
+
+.save resanal1
+
+
+pyuic4 student.ui -o student.py
+pyuic4 clsdet.ui -o clsdet.py
+pyuic4 faculty.ui -o faculty.py
+pyuic4 csvfile.ui -o csvfile.py
+pyuic4 resanal.ui -o resanal.py
+pyuic4 genstats.ui -o genstats.py
+
+
+
+
+
+
+
+
+
+
+
+
+
